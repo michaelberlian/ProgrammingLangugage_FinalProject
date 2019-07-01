@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.MainController">
+   <children>
+      <Button layoutX="407.0" layoutY="43.0" mnemonicParsing="false" onAction="#third" text="Calculate" />
+      <Label layoutX="24.0" layoutY="43.0" prefHeight="27.0" prefWidth="23.0" text="y = " />
+      <Label layoutX="91.0" layoutY="43.0" prefHeight="27.0" prefWidth="38.0" text="x^3 +" />
+      <TextField layoutX="47.0" layoutY="43.0" prefHeight="27.0" prefWidth="38.0" fx:id="x_coef3" />
+      <TextField layoutX="129.0" layoutY="43.0" prefHeight="27.0" prefWidth="38.0" fx:id="x_coef2" />
+      <TextField layoutX="218.0" layoutY="43.0" prefHeight="27.0" prefWidth="38.0" fx:id="x_coef" />
+      <TextField fx:id="number" layoutX="285.0" layoutY="43.0" prefHeight="27.0" prefWidth="38.0" />
+      <LineChart fx:id="chart" layoutX="225.0" layoutY="92.0" prefHeight="265.0" prefWidth="343.0">
+         <xAxis>
+            <NumberAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <Label fx:id="output" layoutX="41.0" layoutY="211.0" prefHeight="123.0" prefWidth="185.0" />
+      <Button layoutX="505.0" layoutY="43.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Label layoutX="262.0" layoutY="43.0" prefHeight="27.0" prefWidth="23.0" text="x +" />
+      <Label layoutX="173.0" layoutY="43.0" prefHeight="27.0" prefWidth="38.0" text="x^2 +" />
+      <Label layoutX="36.0" layoutY="92.0" prefHeight="17.0" prefWidth="76.0" text="Choose xl" />
+      <TextField layoutX="110.0" layoutY="87.0" prefHeight="27.0" prefWidth="49.0" fx:id="xl" />
+      <TextField fx:id="start" layoutX="74.0" layoutY="167.0" prefHeight="27.0" prefWidth="38.0" />
+      <TextField fx:id="end" layoutX="135.0" layoutY="167.0" prefHeight="27.0" prefWidth="38.0" />
+      <Label layoutX="86.0" layoutY="131.0" prefHeight="27.0" prefWidth="76.0" text="graph range" />
+   </children>
+</AnchorPane>
